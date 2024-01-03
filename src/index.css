@@ -1,13 +1,46 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.fcontainer {
+  border: 2px solid blue;
+  display: flex;
+  /* decided height according to its child if in percentage */
+  /* height: 100%; */
+  /* height: 45vh; */
+  /* flex-direction: column; */
+  /* flex-direction: column-reverse; */
+  /* justify-content: space-around; */
+  /* justify-content: space-evenly; */
+  /* justify-content: space-between; */
+  /* justify-content:center; its align container in horizontaly center */
+  /* justify-content: flex-end; */
+  /* align-items: center;  its align container in verticaly center */
+  /* align-items: flex-end;  container moves in bottom left side  */
+  /* align-items: flex-start; container moves in top left side*/
+  /* flex-wrap: wrap; */
+  /* flex-wrap: wrap-reverse; */
+  /* flex-flow: column wrap; */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.fitem {
+  background-color: red;
+  border: 2px solid black;
+  margin: 12px;
+  height: 122px;
+  width: 122px;
+}
+
+.item1 {
+  order: 2;
+  /* flex-grow: 5; */
+  /* flex-shrink: 2; */
+  /* jiska flex shrink jada hoga wo screen size small hone pe sable pahle small hoga */
+}
+/* jiska order jada hoga vo div last me jayega */
+.item2 {
+  order: 3;
+  /* flex-shrink: 3; */
+  /* flex-grow: 1; */
+  /* jis div ka flex-grow jada hoga uska width jada hoaga means bara hoga */
+}
+.item3 {
+  order: 3;
+  /* flex-grow: 9; */
 }
