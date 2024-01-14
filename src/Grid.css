@@ -1,25 +1,35 @@
-/*............for Grid Learning..........................*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-.Gridcontainer {
-  background-color: red;
-  height: 900px;
-  width: 900px;
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(116, 108, 108);
   display: grid;
-  grid-template-rows: 100px 100px 100px;
-  grid-template-columns: 100px 100px 100px;
-  row-gap: 12px;
-  column-gap: 12px;
-  grid-template-rows: repeat(3, 1fr);
+  gap: 1rem;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  padding: 4rem;
+  justify-items: center; /* Will Center all items of cell  */
+  align-items: center;
 }
 
-.fitem {
-  background-color: aqua;
-  /* height: 80px;
-  width: 80px; */
-}
-
-.item1 {
-  grid-column-start: 1;
-  grid-column-end: 4;
+.item {
+  height: 100px;
+  width: 100px;
+  background-color: rgb(53, 83, 53);
+  border: 5px solid rgb(196, 177, 177);
+  /* justify-self: stretch; */
+  /* justify-self: center;
+  align-self: end; */
+  /* place-self: center; vertically and horizontoly center  */
+  /* place-self: stretch; */
 }

@@ -1,14 +1,16 @@
-import "./index.css";
+import React from "react";
 
-function App() {
+const App = () => {
   return (
-    <div className="fcontainer">
-      <div className="fitem item1">1</div>
-      <div className="fitem item2">2</div>
-      <div className="fitem item3">3</div>
-      <div className="fitem item4">4</div>
+    <div className="container">
+      <div className="item header">Header</div>
+      <div className="item SideBar">SideBar</div>
+      <div className="item Content1">Content1</div>
+      <div className="item">Content2</div>
+      <div className="item">Content3</div>
+      <div className="item footer">footer</div>
     </div>
   );
-}
+};
 
 export default App;

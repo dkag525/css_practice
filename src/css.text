@@ -1,0 +1,119 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+
+// Grid Css 
+
+/*............for Grid Learning..........................*/
+
+.Gridcontainer {
+  background-color: red;
+  height: 900px;
+  width: 900px;
+  display: grid;
+  grid-template-rows: 100px 100px 100px;
+  grid-template-columns: 100px 100px 100px;
+  row-gap: 12px;
+  column-gap: 12px;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.fitem {
+  background-color: aqua;
+  /* height: 80px;
+  width: 80px; */
+}
+
+.item1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+
+// css...............//
+
+
+.fcontainer {
+  border: 2px solid blue;
+  display: flex;
+  /* decided height according to its child if in percentage */
+  /* height: 100%; */
+  height: 45vh;
+  /* flex-direction: column; */
+  /* flex-direction: column-reverse; */
+  /* justify-content: space-around; */
+  /* justify-content: space-evenly; */
+  /* justify-content: space-between; */
+  /* justify-content:center; its align container in horizontaly center */
+  /* justify-content: flex-end; */
+  /* align-items: center;  its align container in verticaly center */
+  /* align-items: flex-end;  container moves in bottom left side  */
+  /* align-items: flex-start; container moves in top left side*/
+  /* flex-wrap: wrap; */
+  /* flex-wrap: wrap-reverse; */
+  /* flex-flow: column wrap; */
+}
+
+.fitem {
+  background-color: red;
+  border: 2px solid black;
+  margin: 12px;
+  height: 122px;
+  width: 122px;
+}
+
+.item1 {
+  order: 2;
+  /* flex-grow: 5; */
+  /* flex-shrink: 2; */
+  /* jiska flex shrink jada hoga wo screen size small hone pe sable pahle small hoga */
+}
+/* jiska order jada hoga vo div last me jayega */
+.item2 {
+  order: 3;
+  /* flex-shrink: 3; */
+  /* flex-grow: 1; */
+  /* jis div ka flex-grow jada hoga uska width jada hoaga means bara hoga */
+}
+.item3 {
+  order: 3;
+  /* flex-grow: 9; */
+  /* align-self: center; */
+}
